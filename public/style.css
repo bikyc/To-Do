@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1.day {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #2C3E50;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+}
+
+.list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+    max-width: 100%;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    padding: 10px 15px;
+    background-color: #3498DB;
+    color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #eef1ef;
+    cursor: pointer;
+}
+
+.label.completed {
+    text-decoration: line-through;
+    color: #BDC3C7;
+    transition: color 0.3s ease-in-out;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #BDC3C7;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form input[type="text"]:focus {
+    border-color: #3498DB;
+    box-shadow: 0 0 8px #3498DB;
+}
+
+.form button {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form button:hover {
+    background-color: #34495E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form button i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 550px) {
+    .form {
+        flex-direction: column;
+    }
+    .form button {
+        width: 100%;
+    }
+}
